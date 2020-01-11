@@ -1,0 +1,33 @@
+[v-cloak] { display:none; }
+
+.ratings__checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.ratings__star {
+  display: inline-block;
+  padding: 3px;
+  font-size: 1.5em;
+  color: #ABABAB;
+  -webkit-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+
+.ratings__star:hover {
+  cursor: pointer;
+}
+
+.ratings__star.is-selected {
+  color: #FFD700;
+}
+
+.ratings__star.is-disabled:hover {
+  cursor: default;
+}
